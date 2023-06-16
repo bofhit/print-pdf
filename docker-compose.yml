@@ -6,4 +6,8 @@ services:
       - "${CUPS_PORT}:631"
       # Flask port.
       - "${FLASK_PORT}:${FLASK_PORT}"
+    volumes:
+      - print-pdf:/etc/cups
+volumes:
+  print-pdf:
 
