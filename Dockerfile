@@ -5,7 +5,7 @@ RUN apt update \
         pip
 
 COPY cupsd.conf /etc/cups/cupsd.conf
-COPY . /app
+COPY . app
 
 WORKDIR /app
 
