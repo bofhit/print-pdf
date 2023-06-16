@@ -9,6 +9,14 @@ COPY . /app
 
 WORKDIR /app
 
-RUN     pip install -r requirements.txt
+RUN pip install -r requirements.txt
+
+# CUPS user.
+RUN adduser admcups && \
+    echo "admcups:bacon-88" | chpasswd && \
+    usermod -aG lpadmin admcups
+
+# Resolve permissions error when running on Linux.
+RUN chmod +x ./startup.sh
 
 ENTRYPOINT ["./startup.sh"]
