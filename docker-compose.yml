@@ -1,0 +1,9 @@
+services:
+  print-pdf:
+    build: .
+    ports:
+      # CUPS port.
+      - "${CUPS_PORT}:631"
+      # Flask port.
+      - "${FLASK_PORT}:${FLASK_PORT}"
+
