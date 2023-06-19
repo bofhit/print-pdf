@@ -32,6 +32,10 @@ input[type=button] {
     margin-bottom: 5px;
 }
 
+.text-input {
+    background-color: white;
+}
+
 .link-button {
     color: black;
     border: 2px solid #387f75;    
@@ -42,26 +46,6 @@ input[type=button] {
 
 .link-button:hover {
     background-color: #387f75;
-}
-
-.power-on-text {
-    min-width: 10vw;
-    max-width: 12vw;
-    color: white;
-    background-color: green;
-    padding-top: 1vh;
-    padding-bottom: 1vh; 
-    border-radius: 5px;
-}
-
-.power-off-text {
-    min-width: 10vw;
-    max-width: 12vw;
-    color: white;
-    background-color: red;
-    padding-top: 1vh;
-    padding-bottom: 1vh; 
-    border-radius: 5px;
 }
 
 .timestamp-text {
@@ -93,37 +77,8 @@ input[type=button] {
 
     /* Main body of page */
     .main-content {
-        font-size: 8vh;
+        font-size: 12vh;
         height: 82vh;
-    }
-
-    /* Dehydrator detail grid */
-    .grid-container {
-        background-color: #a8bdbf;
-        display: grid;
-        height: 72vh;    
-        grid-template-columns: 60% 40%;
-        gap: 10px;
-        font-size: 5vh;
-        padding: 15px;
-    }
-
-    .grid-item-name {
-        /* Span entire grid */
-        grid-column: 1 / -1;
-        background-color: #98e4d9;
-        border-radius: 5px;
-        padding: 10px;
-        text-align: center;
-        border: 1px solid rgba(0, 0, 0, 0.5);
-    }
-
-    .grid-item-value {
-        grid-column: 1 / -1;
-        border-radius: 5px;
-        padding: 10px;
-        text-align: center;
-        background-color: white;
     }
 
     /* Empty spacer div */
@@ -131,14 +86,6 @@ input[type=button] {
         height: 1vh;
     }
 
-    /* Login inputs */
-    .login-input {
-        font-size: 5vh;
-        border-radius: 5px;
-        border: solid 1px;
-        border-color: gray;
-        max-width: 75vw;
-    }
 
     /* Footer */
     .footer-content {
@@ -167,40 +114,6 @@ input[type=button] {
     .main-content {
         font-size: 5vh;
         height: 82vh;
-    }
-
-    /* Dehydrator detail grid */
-    .grid-container {
-        background-color: #a8bdbf;
-        display: grid;
-        height: 72vh;    
-        grid-template-columns: 60% 40%;
-        gap: 10px;
-        padding: 15px;
-        td {
-            vertical-align: middle;
-        }
-    }
-
-    .grid-item-name {
-        font-size: 8vh;
-        background-color: #98e4d9;
-        border-radius: 5px;
-        padding-right: 2vw;
-        padding-top: 3vh;
-        padding-bottom: 3vh;
-        text-align: end;
-        border: 1px solid rgba(0, 0, 0, 0.5);
-    }
-
-    .grid-item-value {
-        font-size: 8vh;
-        border-radius: 5px;
-        padding-left: 2vw;
-        padding-top: 3vh;
-        padding-bottom: 3vh;
-        text-align: start;
-        background-color: white;
     }
 
     /* Empty spacer div */
