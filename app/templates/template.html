@@ -10,21 +10,11 @@
 
 <div class=main-content>
 
-{% block body %}
-
-{% if session['logged_in'] %}
-
-    You're logged in already
-
-{% else %}
-    <form action="/login" method="POST">
-        <input class="login-input" type="name-tag-name" name="name-tag-name" placeholder="Enter your name">
+    <form action="" method="POST">
+        <input class="name-input" type="text" name="name-tag-name" placeholder="Enter your name">
         <div class="spacer-div"></div>
         <br>
         <input class="name-tag-input" type="submit" value="Submit">
     </form>
-{% endif %}
-
-{% endblock %}
 </div>
 </body>
