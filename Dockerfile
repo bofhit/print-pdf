@@ -1,5 +1,8 @@
 FROM ubuntu:22.04
 
+# Send output to console.
+ENV PYTHONUNBUFFERED=1
+
 RUN apt update \
     && apt install -yq cups \
         pip
