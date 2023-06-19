@@ -1,7 +1,7 @@
 import dotenv
 import os
 
-from flask import Flask
+from flask import Flask, request
 
 app = Flask(__name__)
 
@@ -10,8 +10,10 @@ dotenv.load_dotenv()
 
 FLASK_PORT = os.environ['FLASK_PORT']
 
-@app.route('/')
-def hello():
+@app.route('/name-tag', methods=['POST'])
+def name-tag():
+    """Print a name tag."""
+    print(request.form.get('name-tag'))
     return "Hello World!"
   
 if __name__ == "__main__":

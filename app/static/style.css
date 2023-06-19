@@ -1,0 +1,234 @@
+* {
+    font-family: "Arial";    
+    background-color: #7bbcb6;
+}
+
+html, body {
+    margin: 0;
+}
+
+h1 {
+    font-size: 10vh;
+}
+
+h2 {
+    text-align: center;
+}
+    
+div {
+    background-color: #7bbcb6;
+    text-align: center;
+    vertical-align: middle;
+}
+
+input {
+    padding: 2px;
+    border: 3px;    
+}
+
+input[type=button] {
+    color: white;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.link-button {
+    color: black;
+    border: 2px solid #387f75;    
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.link-button:hover {
+    background-color: #387f75;
+}
+
+.power-on-text {
+    min-width: 10vw;
+    max-width: 12vw;
+    color: white;
+    background-color: green;
+    padding-top: 1vh;
+    padding-bottom: 1vh; 
+    border-radius: 5px;
+}
+
+.power-off-text {
+    min-width: 10vw;
+    max-width: 12vw;
+    color: white;
+    background-color: red;
+    padding-top: 1vh;
+    padding-bottom: 1vh; 
+    border-radius: 5px;
+}
+
+.timestamp-text {
+    font-size: 3vh;
+    margin-left: 20vw;
+}   
+    /* Power button div */
+    .power-button-content {
+    background-color: #7bbcb6;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    margin-left: 8vw;
+    }
+ 
+/* Smartphone screens, portrait orientation */ 
+@media screen and (max-aspect-ratio: 1/1) {
+
+
+    /* Page header */
+    .header-content {
+        height: 10vh;
+    }
+
+    h1 {
+        font-size: 6vh;
+        vertical-align: middle;
+    }
+
+    /* Main body of page */
+    .main-content {
+        font-size: 8vh;
+        height: 82vh;
+    }
+
+    /* Dehydrator detail grid */
+    .grid-container {
+        background-color: #a8bdbf;
+        display: grid;
+        height: 72vh;    
+        grid-template-columns: 60% 40%;
+        gap: 10px;
+        font-size: 5vh;
+        padding: 15px;
+    }
+
+    .grid-item-name {
+        /* Span entire grid */
+        grid-column: 1 / -1;
+        background-color: #98e4d9;
+        border-radius: 5px;
+        padding: 10px;
+        text-align: center;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+    }
+
+    .grid-item-value {
+        grid-column: 1 / -1;
+        border-radius: 5px;
+        padding: 10px;
+        text-align: center;
+        background-color: white;
+    }
+
+    /* Empty spacer div */
+    .spacer-div {
+        height: 1vh;
+    }
+
+    /* Login inputs */
+    .login-input {
+        font-size: 5vh;
+        border-radius: 5px;
+        border: solid 1px;
+        border-color: gray;
+        max-width: 75vw;
+    }
+
+    /* Footer */
+    .footer-content {
+        height: 10vh; 
+    }
+    
+    .home-button {
+        font-size: 8vh;
+        color: black;
+        vertical-align: middle;
+        border: 2px solid #387f75;    
+        border-radius: 2px;
+        text-decoration: none;
+        margin: 10px;
+    }
+}
+
+/* Non-smartphone screens, and smartphone screens landscape orientation */ 
+@media screen and (min-aspect-ratio: 1/1) {
+    /* Page header */
+    .header-content {
+        height: 18vh;
+    }
+
+    /* Main body of page */
+    .main-content {
+        font-size: 5vh;
+        height: 82vh;
+    }
+
+    /* Dehydrator detail grid */
+    .grid-container {
+        background-color: #a8bdbf;
+        display: grid;
+        height: 72vh;    
+        grid-template-columns: 60% 40%;
+        gap: 10px;
+        padding: 15px;
+        td {
+            vertical-align: middle;
+        }
+    }
+
+    .grid-item-name {
+        font-size: 8vh;
+        background-color: #98e4d9;
+        border-radius: 5px;
+        padding-right: 2vw;
+        padding-top: 3vh;
+        padding-bottom: 3vh;
+        text-align: end;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+    }
+
+    .grid-item-value {
+        font-size: 8vh;
+        border-radius: 5px;
+        padding-left: 2vw;
+        padding-top: 3vh;
+        padding-bottom: 3vh;
+        text-align: start;
+        background-color: white;
+    }
+
+    /* Empty spacer div */
+    .spacer-div {
+        margin: 10px;
+    }
+
+    /* Login inputs */
+    .login-input {
+        font-size: 6vh;
+        border-radius: 5px;
+        border: solid 1px;
+        border-color: gray;
+        max-width: 50vw;
+    }
+
+    /* Footer */
+    .footer-content {
+        height: 10vh; 
+    }
+    
+    .home-button {
+        font-size: 8vh;
+        color: black;
+        vertical-align: middle;
+        border: 2px solid #387f75;    
+        border-radius: 2px;
+        text-decoration: none;
+        margin: 10px;
+    }
+}
